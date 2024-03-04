@@ -13,3 +13,12 @@
   }
 }
 </style>
+<script setup>
+import { onMounted } from "vue";
+import { ref } from "vue";
+import { onUnmounted } from "vue";
+
+let interval = ref("");
+
+
+</script>

@@ -1,11 +1,14 @@
-import './assets/main.css'
+// import './assets/main.css'
+import FormInputError from "@/components/FormInputError.vue";
+import ProductsInfo from "@/components/ProductsInfo.vue";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-const app = createApp(App)
+const app = createApp(App);
+app.component("FormInputError", FormInputError);
+app.component("ProductsInfo", ProductsInfo);
+app.use(router);
 
-app.use(router)
-
-app.mount('#app')
+app.mount("#app");
